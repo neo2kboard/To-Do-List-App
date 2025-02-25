@@ -1,0 +1,158 @@
+  body {
+    background: linear-gradient(135deg, #2c5f2d, #4c934c);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    padding: 2rem 0;
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 550px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-add-task, .savebtn{
+    background-color: #28a745;
+    color: #fff;
+  }
+
+  .btn-add-task:hover,
+  .savebtn:hover{
+    background-color: #0c8a29;
+    color: #fff;
+  }
+  
+  h1 {
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-control, .btn {
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .form-control:focus {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  .list-group-item div {
+    display: flex;
+    gap: 0.5rem; 
+  }
+  
+  .list-group-item {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+  }
+  
+  .list-group-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .task-text {
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+  
+  .task-text.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+  }
+  
+  .check-circle {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, border-color 0.3s;
+  }
+  
+  .check-circle.checked {
+    background: #28a745; 
+    border-color: #28a745; 
+  }
+  
+  .check-circle.checked::after {
+    content: '✓'; 
+    color: #fff; 
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn-warning {
+    background: #ffc107;
+    color: #000;
+  }
+  
+  .btn-danger {
+    background: #dc3545;
+    color: #fff;
+  }
+  
+  .tasks-section {
+    margin-bottom: 2rem;
+  }
+  
+  .tasks-section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+    .modal-content {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      color: #fff;
+    }
+    .modal-header, .modal-footer {
+      border: none;
+    }
+    .modal-body input {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: #fff;
+      border-radius: 10px;
+      padding: 0.5rem 1rem;
+      width: 100%;
+    }
+    .modal-body input:focus {
+      outline: none;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+  
